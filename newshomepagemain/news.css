@@ -41,15 +41,15 @@ p {
     display: flex;
 }
 
-.nav__list_element {
+.nav__element {
     margin: 0px 1rem;
 }
 
-.nav__list_element a {
+.nav__element a {
     color: var(--dark-grayish-blue);
 }
 
-.nav__list_element a:hover,
+.nav__element a:hover,
 :focus {
     color: var(--soft-red);
 }
@@ -187,9 +187,17 @@ h3 {
     margin: 0.5rem 0px;
 }
 
-i {
+#ham {
     position: absolute;
     right: 2rem;
+    font-size: 2rem;
+    display: none !important;
+}
+
+#xmark {
+    position: relative;
+    left: 205px;
+    bottom: 255px;
     font-size: 2rem;
     display: none !important;
 }
@@ -199,11 +207,48 @@ i {
         margin: 0px 2rem;
     }
 
-    .nav__list {
+    /* .nav__list {
+        display: none;
+    } */
+
+    /* lick Hamburger */
+    .nav__container {
+        position: fixed;
+        background-color: var(--off-white);
+        inset: 0px 0px 0px 30%;
+        margin: 0px;
         display: none;
     }
 
-    i {
+    .nav__list {
+        flex-direction: column;
+        position: relative;
+        top: 5rem;
+    }
+
+    .nav__element {
+        margin: 1rem 0px;
+    }
+
+    .nav__element a {
+        font-weight: 700;
+        font-size: 1.3rem;
+    }
+
+    .body--dim {
+        background: rgba(0, 0, 0, 0.2);
+    }
+
+    /* ----- */
+    #ham {
+        display: block !important;
+    }
+
+    #ham:focus {
+        color: var(--soft-red);
+    }
+
+    #xmark {
         display: block !important;
     }
 
