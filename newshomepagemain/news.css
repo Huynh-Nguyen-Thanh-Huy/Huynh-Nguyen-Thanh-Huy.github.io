@@ -186,3 +186,47 @@ h3 {
 .botArticle__container p {
     margin: 0.5rem 0px;
 }
+
+i {
+    position: absolute;
+    right: 2rem;
+    font-size: 2rem;
+    display: none !important;
+}
+
+@media (max-width: 375px) {
+    body {
+        margin: 0px 2rem;
+    }
+
+    .nav__list {
+        display: none;
+    }
+
+    i {
+        display: block !important;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image {
+        content: url("assets/images/image-web-3-mobile.jpg");
+    }
+
+    .card {
+        height: 9rem;
+    }
+
+    .sideArticle__container {
+        margin-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .botArticle img {
+        width: 6rem;
+        height: 100%;
+    }
+}
