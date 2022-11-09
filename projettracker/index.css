@@ -1,0 +1,78 @@
+:root {
+    --Red: hsl(0, 100%, 68%);
+    --Very-Dark-Blue: hsl(230, 29%, 20%);
+    --Dark-Grayish-Blue: hsl(230, 11%, 40%);
+    --Grayish-Blue: hsl(231, 7%, 65%);
+    --Light-Grayish-Blue: hsl(207, 33%, 95%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+body p {
+    font-size: 18px;
+}
+
+.img-con__img {
+    min-width: 145%;
+}
+
+#ctn-con {
+    padding: 3rem 0px 4rem 2rem;
+}
+
+.nav-link {
+    color: var(--Very-Dark-Blue) !important;
+}
+
+#login {
+    color: var(--Grayish-Blue) !important;
+}
+
+.ctn-con__status {
+    padding: 0.2rem 0.8rem;
+    padding-top: 0.1rem;
+}
+
+.ctn-con__desc {
+    letter-spacing: 3px;
+    color: var(--Grayish-Blue);
+}
+
+#ctn-con__btn {
+    background-color: var(--Red);
+    border: none;
+}
+
+#ctn-con__preview {
+    letter-spacing: 2px;
+    color: var(--Grayish-Blue);
+}
+
+.ctn-con__content {
+    font-family: "Barlow", sans-serif;
+    color: var(--Grayish-Blue);
+}
+
+.ctn-con__header {
+    color: var(--Very-Dark-Blue);
+}
+
+.draw-circle {
+    background-color: var(--Light-Grayish-Blue);
+    width: 5px;
+}
+
+@media (min-width: 992px) {
+    #ctn-con {
+        padding: 3rem 0px 4rem 10rem;
+    }
+}

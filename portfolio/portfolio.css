@@ -1,0 +1,167 @@
+:root {
+    --dark: #21243D;
+    --soft-red: #FF6464;
+    --faint-blue: #EDF7FA;
+    --dark-blue: #142850;
+    --white: white;
+    --faint-grey: #8695A4;
+
+    --font-sm: 1rem;
+    --font-md: 1.125rem;
+    --font-lg: 1.375rem;
+    --font-xl: 2rem;
+}
+
+*,
+*::after,
+*::backdrop {
+    box-sizing: border-box;
+    font-family: "Heebo", sans-serifs;
+
+    color: var(--dark);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav {
+    width: 100%;
+    height: 50px;
+    background-color: wi;
+}
+
+.nav__hamcontainer {
+    position: relative;
+    left: 327px;
+    top: 10px;
+    font-size: 30px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 1.5rem;
+}
+
+.avt {
+    width: 12rem;
+    margin: 3rem auto;
+}
+
+.title__header {
+    font-size: var(--font-xl);
+    font-weight: 700;
+    padding: 0px 2rem;
+}
+
+.title__ctn {
+    margin: 2rem 0px;
+    font-weight: 400;
+    font-size: var(--font-sm);
+}
+
+.title__btn {
+    color: var(--white);
+    background-color: var(--soft-red);
+    border: none;
+    border-radius: 2px;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+}
+
+.posts {
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+    background-color: var(--faint-blue);
+}
+
+.posts__header {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: var(--font-md);
+}
+
+.posts__card-title {
+    font-weight: 700;
+    font-size: var(--font-lg);
+}
+
+.posts__card {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--white);
+}
+
+.posts__card-desc {
+    margin-top: 0.5rem;
+}
+
+.posts__card-desc--year {
+    padding-right: 1rem;
+}
+
+.posts__card-desc--des {
+    border-left: 1px solid var(--dark);
+    padding-left: 1rem;
+}
+
+.works__header {
+    text-align: center;
+    margin: 1rem;
+    font-size: var(--font-md);
+}
+
+.cards {
+    margin: 0px 1rem;
+    outline: none;
+    border-bottom: 1px solid #E0E0E0;
+    ;
+}
+
+.card__container-year {
+    background-color: var(--dark-blue);
+    width: 62px;
+    height: 25px;
+    color: var(--white);
+    border-radius: 16px;
+    display: inline-block;
+}
+
+.card__container-wrap {
+    margin: 1rem 0px;
+    height: 100%;
+}
+
+.card__container-title {
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+.card__container-year p {
+    color: var(--white);
+    text-align: center;
+    padding-top: 1px;
+}
+
+.card__container-desc {
+    display: inline-block;
+    margin-left: 1rem;
+    margin-bottom: 0px;
+    color: var(--faint-grey);
+}
+
+.card-2,
+.card-3 {
+    display: none;
+}
+
+footer {
+    margin-top: 10rem;
+}
+
+.footer__logo-icon {
+    width: 2rem;
+}
