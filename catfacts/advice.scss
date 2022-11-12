@@ -36,10 +36,10 @@ body {
         height: 10rem;
     }
 
-    &__textbox {
-        //max-width: 100%;
-        //width: 100rem;
-    }
+    // &__textbox {
+    //     //max-width: 100%;
+    //     //width: 100rem;
+    // }
 
     &__divier {
         color: black;
@@ -62,11 +62,4 @@ body {
             cursor: pointer;
         }
     }
-}
-
-@media (min-width: 576px) {
-    // .container {
-    //     max-width: 40%;
-    // }
-
 }

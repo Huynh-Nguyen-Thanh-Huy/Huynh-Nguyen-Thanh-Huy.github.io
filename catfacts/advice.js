@@ -6,7 +6,7 @@ async function getAdvice() {
 
     const res = await fetch("https://catfact.ninja/fact?max_length=64");
     const data = await res.json();
-    text.innerText = data.fact;
+    text.innerText = `"${data.fact}"`;
 }
 
 
