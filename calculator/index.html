@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+
+  <link rel="stylesheet" href="calc.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <div id="bodyContain">
+    <div class="container">
+      <div id="nav" class="row">
+        <div class="col-6 d-flex align-items-center">
+          <a id="nav__logo" href="#" class="text-decoration-none">calc</a>
+        </div>
+        <div class="col-6">
+          <div class="row">
+            <div class="col-6"></div>
+            <div id="nav__num" class="col-6 d-flex justify-content-around">
+              <span class="px-2">1</span>
+              <span class="px-2">2</span>
+              <span class="px-2">3</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <span id="nav__theme" class="text-uppercase">theme</span>
+            </div>
+            <div class="col-6 d-flex justify-content-around">
+              <div id="nav__selector" class="btn-group">
+                <button id="theme1" class="btn btn-secondary active"></button>
+                <button id="theme2" class="btn btn-secondary"></button>
+                <button id="theme3" class="btn btn-secondary"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="screen" class="p-3 mt-4 rounded-3">
+      <p id="show" class="text-end m-0">0</p>
+    </div>
+
+    <div class="key-container my-4 p-3 pb-2 rounded-3">
+      <div id="keypad" class="container">
+        <div class="row btn-con">
+          <div id="seven" class="col btn-con__btn"><span>7</span></div>
+          <div id="eight" class="col btn-con__btn"><span>8</span></div>
+          <div id="nine" class="col btn-con__btn"><span>9</span></div>
+          <div id="del" class="col btn-con__btn text-uppercase"><span class="btntext">del</span></div>
+        </div>
+        <div class="row btn-con">
+          <div id="four" class="col btn-con__btn"><span>4</span></div>
+          <div id="five" class="col btn-con__btn"><span>5</span></div>
+          <div id="six" class="col btn-con__btn"><span>6</span></div>
+          <div id="plus" class="col btn-con__btn"><span class="mt-2">+</span></div>
+        </div>
+        <div class="row btn-con">
+          <div id="one" class="col btn-con__btn"><span>1</span></div>
+          <div id="two" class="col btn-con__btn"><span>2</span></div>
+          <div id="three" class="col btn-con__btn"><span>3</span></div>
+          <div id="minus" class="col btn-con__btn"><span>-</span></div>
+        </div>
+        <div class="row btn-con">
+          <div id="dot" class="col btn-con__btn"><span>.</span></div>
+          <div id="zero" class="col btn-con__btn"><span>0</span></div>
+          <div id="div" class="col btn-con__btn"><span>/</span></div>
+          <div id="mul" class="col btn-con__btn"><span>x</span></div>
+        </div>
+        <div class="row btn-con">
+          <div id="reset" class="low-btn col btn-con__btn text-uppercase"><span class="btntext">reset</span></div>
+          <div id="equal" class="low-btn col btn-con__btn"><span>=</span></div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Thanh Huy</a>.
+    </div>
+  </div>
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+  <script src="calc.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+:root {
+  --up-text: hsl(0, 0%, 100%);
+  --down-text: hsl(221, 14%, 31%);
+  --reset-text: hsl(0, 0%, 100%);
+  --equal-text: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+body {
+  margin: 0px auto !important;
+  max-width: 30rem;
+  background-color: #3a4764 !important;
+}
+
+#bodyContain {
+  margin: 1rem;
+}
+
+#nav__logo {
+  font-size: 30px;
+  color: var(--up-text);
+}
+
+#nav__theme {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  color: var(--up-text);
+}
+
+#nav__num {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  color: var(--up-text);
+}
+
+#screen {
+  background-color: #182034;
+  font-size: 32px;
+}
+
+.btn-con__btn {
+  background-color: #eae3dc;
+  margin: 12px 6px;
+  width: 100%;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 4px 0px 0px #b4a597;
+          box-shadow: 0px 4px 0px 0px #b4a597;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+}
+
+.btn-con__btn span {
+  color: var(--down-text);
+  font-size: 32px;
+}
+
+.btn-con__btn .btntext {
+  font-size: 20px;
+}
+
+.btn-con #reset,
+.btn-con #equal {
+  aspect-ratio: 2/1;
+}
+
+.btn-con #del,
+.btn-con #reset {
+  background-color: #637097;
+  -webkit-box-shadow: 0px 4px 0px 0px #404e72;
+          box-shadow: 0px 4px 0px 0px #404e72;
+}
+
+.btn-con #del span,
+.btn-con #reset span {
+  color: var(--reset-text);
+}
+
+.btn-con #equal {
+  background-color: #d03f2f;
+  -webkit-box-shadow: 0px 4px 0px 0px #93261a;
+          box-shadow: 0px 4px 0px 0px #93261a;
+}
+
+.btn-con #equal span {
+  color: var(--equal-text);
+}
+
+#show {
+  color: var(--up-text);
+}
+
+.key-container {
+  background-color: #232c43;
+}
+
+@media (min-width: 576px) {
+  body {
+    margin: 3rem auto !important;
+  }
+  .btn-con__btn {
+    aspect-ratio: 2 / 1;
+  }
+  .low-btn {
+    height: 4rem;
+  }
+}
+/*# sourceMappingURL=calc.css.map */
