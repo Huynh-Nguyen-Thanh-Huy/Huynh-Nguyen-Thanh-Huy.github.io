@@ -4,9 +4,10 @@ const text = document.querySelector(".container__text");
 
 async function getAdvice() {
 
-    const res = await fetch("https://catfact.ninja/fact?max_length=64");
+    const res = await fetch("https://icanhazdadjoke.com/", { headers: { "Accept": "application/json" } });
     const data = await res.json();
-    text.innerText = `"${data.fact}"`;
+    console.log(data);
+    text.innerText = `"${data.joke}"`;
 }
 
 
