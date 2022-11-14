@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+
+  <link rel="stylesheet" href="url.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg px-3 pt-4">
+    <a href="#" class="navbar-brand">
+      <img class="navbar__logo" src="images/logo.svg" alt="Logo">
+    </a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Resources</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Sign Up</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="main-content">
+    <div class="main-container">
+      <div class="row">
+        <div class="col-lg-6 order-lg-2 text-center">
+          <img src="images/illustration-working.svg" alt="illustration-working"
+            class="main-container__img img-fluid mt-3">
+        </div>
+        <div class="col-lg-6 order-lg-1 text-lg-start text-center">
+          <h1 class="main-container__header mt-5 fw-bold display-2 text-lg-start">More than just shorter links</h1>
+
+          <p class="main-container__desc mt-3 text-lg-start mt-lg-0s">Build your brand’s recognition and get detailed
+            insights
+            on how your links are performing.</p>
+
+          <a href="#" class="main-container__btn btn btn-primary mt-3 rounded-pill fw-bold mb-4 shadow-none"
+            role="button">Get
+            Started</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="shorten-container p-4 p-lg-5 rounded-2 mt-5">
+      <form id="url-form" action="#">
+        <div class="row">
+          <div class="col-lg-10">
+            <input type="url" class="form-control py-2 mb-2 text-start d-lg-inline" id="url-orig"
+              placeholder="Shorten a link here...">
+          </div>
+          <div class="col-lg-2">
+            <button class="shorten-container__btn py-2 btn mt-2 mt-lg-0 fw-bold d-lg-inline" type="summit">Shorten
+              It!</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="link-container mt-4">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="link-container__orig">
+            <p class="link-container__orig-text text-start">https://hoppscotch.io/</p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="link-container__new mt-lg-0  mt-3">
+            <p class="link-container__new-text text-start text-lg-end">https://shrtco.de/ypuRwJ</p>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <button class="link-container__btn-copy btn rounded-2 py-2 fw-bold">Copy</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="headliner mt-5 pt-4 text-center">
+      <h2 class="fw-bold">Advanced Statistics</h2>
+      <p class="card__text">Track how your links are performing across the web with our
+        advanced statistics dashboard.</p>
+    </div>
+
+    <div class="card-container d-lg-flex justify-content-lg-center">
+      <div id="card1" class="card">
+        <div class="card__imgbox rounded-circle d-flex justify-content-center align-items-center mx-auto">
+          <img src="images/icon-brand-recognition.svg" alt="icon-brand-recognition">
+        </div>
+
+        <h3 class="card__header">Brand Recognition</h3>
+        <p class="card__text">Boost your brand recognition with each click. Generic links don’t
+          mean a thing. Branded links help instil confidence in your content.</p>
+      </div>
+
+      <div class="blue-line"></div>
+
+      <div id="card2" class="card">
+        <div class="card__imgbox rounded-circle d-flex justify-content-center align-items-center mx-auto">
+          <img src="images/icon-detailed-records.svg" alt="icon-detailed-records">
+        </div>
+        <h3 class="card__header">Detailed Records</h3>
+        <p class="card__text">Gain insights into who is clicking your links. Knowing when and where
+          people engage with your content helps inform better decisions.</p>
+      </div>
+      <div class="blue-line"></div>
+
+      <div id="card3" class="card">
+        <div class="card__imgbox rounded-circle d-flex justify-content-center align-items-center mx-auto">
+          <img src="images/icon-fully-customizable.svg" alt="icon-fully-customizable">
+        </div>
+
+        <h3 class="card__header">Fully Customizable</h3>
+        <p class="card__text">Improve brand awareness and content discoverability through customizable
+          links, supercharging audience engagement.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="mt-5">
+    <div class="boost-container d-flex justify-content-center align-items-center flex-column">
+      <h2 class="boost-container__header">Boost your links today</h2>
+      <a href="#" class="boost-container__btn btn btn-primary rounded-pill fw-bold" role="button">Get Started</a>
+    </div>
+
+    <div class="footer-container text-center">
+      <div class="row">
+
+        <div class="col-lg-4">
+          <img class="footer-container__logo mt-5" src="images/logo.svg" alt="logo">
+        </div>
+
+        <div class="col-lg-5">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="foot-sec">
+                <h3 class="foot-sec__header">Features</h3>
+                <ul>
+                  <li class="foot-sec__list"><a class="foot-sec__elem" href="#">Link Shortening</a></li>
+                  <li class="foot-sec__list"><a class="foot-sec__elem" href="#">Branded Links</a></li>
+                  <li class="foot-sec__list"><a class="foot-sec__elem" href="#">Analytics</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="foot-sec">
+                <h3 class="foot-sec__header">Resources</h3>
+                <ul>
+                  <li class="foot-sec__list"><a class="foot-sec__elem" href="#">Blog</a></li>
+                  <li class="foot-sec__list"><a class="foot-sec__elem" href="#">Developers</a></li>
+                  <li class="foot-sec__list"><a class="foot-sec__elem" href="#">Support</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="foot-sec">
+                <h3 class="foot-sec__header">Company</h3>
+                <ul>
+                  <li class="foot-sec__list"><a class="foot-sec__elem" href="#">About</a></li>
+                  <li class="foot-sec__list"><a class="foot-sec__elem" href="#">Our Team</a></li>
+                  <li class="foot-sec__list"><a class="foot-sec__elem" href="#">Careers</a></li>
+                  <li class="foot-sec__list"><a class="foot-sec__elem" href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-3">
+          <div class="socialIcon">
+            <a href="#"><img class="socialIcon__item" src="images/icon-facebook.svg" alt="icon-facebook"></a>
+            <a href="#"><img class="socialIcon__item" src="images/icon-twitter.svg" alt="icon-twitter"></a>
+            <a href="#"><img class="socialIcon__item" src="images/icon-pinterest.svg" alt="icon-pinterest"></a>
+            <a href="#"><img class="socialIcon__item" src="images/icon-instagram.svg" alt="icon-instagram"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </footer>
+
+
+
+
+
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">thanh huy</a>.
+  </div>
+  <script src="url.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

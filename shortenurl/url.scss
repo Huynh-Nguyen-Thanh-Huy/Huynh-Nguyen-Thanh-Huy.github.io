@@ -1,0 +1,275 @@
+//## Primary
+
+$Cyan: hsl(180, 66%, 49%);
+$Dark-Violet: hsl(257, 27%, 26%);
+
+// ### Secondary
+
+$Red: hsl(0, 87%, 67%);
+
+// ### Neutral
+
+$Gray: hsl(0, 0%, 75%);
+$Grayish-Violet: hsl(257, 7%, 63%);
+$Very-Dark-Blue: hsl(255, 11%, 22%);
+$Very-Dark-Violet: hsl(260, 8%, 14%);
+
+$normal-font: 18px;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    //text-align: center;
+}
+
+body {
+    margin: 0px;
+}
+
+.main-container {
+    &__img {
+        min-width: 150%;
+    }
+
+    &__desc {
+        color: $Grayish-Violet;
+        font-size: $normal-font;
+    }
+
+    &__btn {
+        background-color: $Cyan !important;
+        border: none !important;
+        font-size: $normal-font;
+        padding: 0.8rem 2rem !important;
+    }
+}
+
+.shorten-container {
+    background-color: $Dark-Violet;
+    background-image: url(images/bg-shorten-mobile.svg);
+    background-size: cover;
+    background-position: left 70px bottom 30px;
+    background-repeat: no-repeat;
+
+    &__btn {
+        width: 100%;
+        background-color: $Cyan !important;
+        color: white !important
+    }
+}
+
+.link-container {
+    display: none;
+
+    &__orig {
+        border-bottom: 1px solid $Gray;
+    }
+
+    &__new {
+        color: $Cyan;
+    }
+
+    &__btn-copy {
+        background-color: $Cyan !important;
+        color: white !important;
+        width: 100%;
+    }
+}
+
+.headliner {
+    margin-bottom: 5rem;
+}
+
+.card {
+    padding: 0px 1rem 1rem 1rem;
+    border: none !important;
+    text-align: center;
+
+    &__imgbox {
+        background-color: $Dark-Violet;
+        aspect-ratio: 1 / 1;
+        width: 5rem;
+        position: relative;
+        bottom: 2.5rem;
+    }
+
+    &__header {
+        font-weight: bold;
+    }
+
+    &__text {
+        color: $Grayish-Violet;
+    }
+}
+
+.boost-container {
+    background-color: $Dark-Violet;
+    background-image: url(images/bg-boost-mobile.svg);
+    background-position: right 0px bottom 5px;
+
+    height: 15rem;
+
+    &__header {
+        color: white;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    &__btn {
+        font-size: $normal-font !important;
+        background-color: $Cyan !important;
+        padding: 0.8rem 2.5rem !important;
+    }
+}
+
+.foot-sec {
+    text-align: center;
+
+    ul {
+        padding-left: 0px;
+    }
+
+    &__header {
+        margin: 2rem 0px 1rem 0px;
+    }
+
+    &__list {
+        list-style: none;
+        margin: 0.5rem;
+    }
+
+    &__elem {
+        text-decoration: none;
+        color: $Gray;
+    }
+}
+
+.blue-line {
+    border-right: 8px solid $Cyan;
+    width: 51%;
+    height: 80px;
+}
+
+.footer-container {
+    background-color: $Very-Dark-Violet;
+    color: white;
+
+    &__logo {
+        color: white !important;
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7463%) hue-rotate(276deg) brightness(113%) contrast(104%);
+    }
+}
+
+.socialIcon {
+    &__item {
+        margin: 3rem 1rem;
+    }
+}
+
+.main-content {
+    margin: 0px 1rem;
+}
+
+@media (min-width: 992px) {
+    // body {
+    //     margin: 0px 10rem !important;
+    // }
+
+    nav,
+    .main-content {
+        margin: 0px 10rem !important;
+    }
+
+
+    .main-container {
+        &__img {
+            min-width: 0px;
+            width: 100%
+        }
+    }
+
+    .headliner {
+        width: 30rem;
+        margin: 10rem auto 5rem auto;
+    }
+
+    .card {
+        position: relative;
+        width: 20rem;
+        display: inline;
+        text-align: start;
+
+        &__imgbox {
+            right: 6rem;
+        }
+    }
+
+    .blue-line {
+        border: none;
+        border-top: 8px solid $Cyan;
+        width: 20px;
+        height: 10px;
+        position: relative;
+        top: 120px;
+    }
+
+
+    #card2 {
+        margin-top: 1.5rem;
+    }
+
+    #card3 {
+        margin-top: 3rem;
+    }
+
+    .boost-container {
+        background-image: url(images/bg-boost-desktop.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: 1px;
+    }
+
+    .shorten-container {
+        background-image: url(images/bg-shorten-desktop.svg);
+
+        background-position-y: 3px;
+        background-position-x: 2px;
+    }
+
+    .footer-container {
+        padding: 2.5rem 0px 3rem 0px;
+    }
+
+    .foot-sec {
+        text-align: left;
+
+        &__header {
+            font-size: 1rem;
+        }
+
+        &__elem {
+            font-size: 1rem;
+        }
+
+        &__list {
+            margin-left: 0px;
+        }
+    }
+
+    .link-container {
+
+        border-bottom: 1px solid $Gray;
+
+        &__orig,
+        &__new {
+            padding-top: 10px;
+        }
+
+        &__orig {
+            border: none;
+        }
+
+    }
+}

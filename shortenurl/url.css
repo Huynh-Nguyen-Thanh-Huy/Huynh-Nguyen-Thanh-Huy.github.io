@@ -1,0 +1,225 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0px;
+}
+
+.main-container__img {
+  min-width: 150%;
+}
+
+.main-container__desc {
+  color: #9e9aa7;
+  font-size: 18px;
+}
+
+.main-container__btn {
+  background-color: #2acfcf !important;
+  border: none !important;
+  font-size: 18px;
+  padding: 0.8rem 2rem !important;
+}
+
+.shorten-container {
+  background-color: #3b3054;
+  background-image: url(images/bg-shorten-mobile.svg);
+  background-size: cover;
+  background-position: left 70px bottom 30px;
+  background-repeat: no-repeat;
+}
+
+.shorten-container__btn {
+  width: 100%;
+  background-color: #2acfcf !important;
+  color: white !important;
+}
+
+.link-container {
+  display: none;
+}
+
+.link-container__orig {
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.link-container__new {
+  color: #2acfcf;
+}
+
+.link-container__btn-copy {
+  background-color: #2acfcf !important;
+  color: white !important;
+  width: 100%;
+}
+
+.headliner {
+  margin-bottom: 5rem;
+}
+
+.card {
+  padding: 0px 1rem 1rem 1rem;
+  border: none !important;
+  text-align: center;
+}
+
+.card__imgbox {
+  background-color: #3b3054;
+  aspect-ratio: 1 / 1;
+  width: 5rem;
+  position: relative;
+  bottom: 2.5rem;
+}
+
+.card__header {
+  font-weight: bold;
+}
+
+.card__text {
+  color: #9e9aa7;
+}
+
+.boost-container {
+  background-color: #3b3054;
+  background-image: url(images/bg-boost-mobile.svg);
+  background-position: right 0px bottom 5px;
+  height: 15rem;
+}
+
+.boost-container__header {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.boost-container__btn {
+  font-size: 18px !important;
+  background-color: #2acfcf !important;
+  padding: 0.8rem 2.5rem !important;
+}
+
+.foot-sec {
+  text-align: center;
+}
+
+.foot-sec ul {
+  padding-left: 0px;
+}
+
+.foot-sec__header {
+  margin: 2rem 0px 1rem 0px;
+}
+
+.foot-sec__list {
+  list-style: none;
+  margin: 0.5rem;
+}
+
+.foot-sec__elem {
+  text-decoration: none;
+  color: #bfbfbf;
+}
+
+.blue-line {
+  border-right: 8px solid #2acfcf;
+  width: 51%;
+  height: 80px;
+}
+
+.footer-container {
+  background-color: #232127;
+  color: white;
+}
+
+.footer-container__logo {
+  color: white !important;
+  -webkit-filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7463%) hue-rotate(276deg) brightness(113%) contrast(104%);
+          filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7463%) hue-rotate(276deg) brightness(113%) contrast(104%);
+}
+
+.socialIcon__item {
+  margin: 3rem 1rem;
+}
+
+.main-content {
+  margin: 0px 1rem;
+}
+
+@media (min-width: 992px) {
+  nav,
+  .main-content {
+    margin: 0px 10rem !important;
+  }
+  .main-container__img {
+    min-width: 0px;
+    width: 100%;
+  }
+  .headliner {
+    width: 30rem;
+    margin: 10rem auto 5rem auto;
+  }
+  .card {
+    position: relative;
+    width: 20rem;
+    display: inline;
+    text-align: start;
+  }
+  .card__imgbox {
+    right: 6rem;
+  }
+  .blue-line {
+    border: none;
+    border-top: 8px solid #2acfcf;
+    width: 20px;
+    height: 10px;
+    position: relative;
+    top: 120px;
+  }
+  #card2 {
+    margin-top: 1.5rem;
+  }
+  #card3 {
+    margin-top: 3rem;
+  }
+  .boost-container {
+    background-image: url(images/bg-boost-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 1px;
+  }
+  .shorten-container {
+    background-image: url(images/bg-shorten-desktop.svg);
+    background-position-y: 3px;
+    background-position-x: 2px;
+  }
+  .footer-container {
+    padding: 2.5rem 0px 3rem 0px;
+  }
+  .foot-sec {
+    text-align: left;
+  }
+  .foot-sec__header {
+    font-size: 1rem;
+  }
+  .foot-sec__elem {
+    font-size: 1rem;
+  }
+  .foot-sec__list {
+    margin-left: 0px;
+  }
+  .link-container {
+    border-bottom: 1px solid #bfbfbf;
+  }
+  .link-container__orig, .link-container__new {
+    padding-top: 10px;
+  }
+  .link-container__orig {
+    border: none;
+  }
+}
+/*# sourceMappingURL=url.css.map */
